@@ -10,4 +10,49 @@ This project is an SMS Spam Classifier that uses machine learning to detect and 
 4. Evaluation: Evaluates model performance using accuracy, precision, recall, and F1-score.
 
 ## Dataset
-The dataset used for training and testing the classifier consists of SMS messages that are labeled as either spam or ham. You can download a similar dataset from the [Here](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa3pqaFU0YjJCdmphWjVpNDhNc0wxdG1nMWE3QXxBQ3Jtc0ttVkEyUTdSYjBCLXR5VkxhVGkwZmgydkZrVDBNa3M2QkRwRVZXZ194b0huNGhXdnozc2R3ZXJnQ0xXLVRQV3NGdjREVU5UbDhtWkNuR2d5QnJzY0ctM2o5WVl3ZmhJYVJzWmhhczROc3pOTFZWRWNfMA&q=https%3A%2F%2Fwww.kaggle.com%2Fuciml%2Fsms-spam-collection-dataset&v=YncZ0WwxyzU).
+The dataset used for training and testing the classifier consists of SMS messages that are labeled as either spam or ham. You can download a similar dataset from the [Here](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset).
+
+## Project Structure
+
+SMS-Spam-Classifier/
+│
+├── dataset/
+│   └── spam.csv            # Dataset containing SMS messages with labels
+│
+├── src/
+│   ├── preprocess.py        # Script for text preprocessing
+│   ├── feature_extraction.py # TF-IDF and other feature extraction methods
+│   ├── train.py             # Training the machine learning model
+│   └── predict.py           # Script for making predictions on new messages
+│
+├── models/
+│   └── spam_classifier.pkl  # Saved classifier model
+│
+├── notebooks/
+│   └── EDA.ipynb            # Exploratory Data Analysis notebook
+│
+├── requirements.txt         # Python dependencies for the project
+└── README.md                # Project description and instructions
+
+
+## Prerequisites
+To run this project, you will need:
+
+Python 3.x
+Install the required Python libraries by running
+
+pip install -r requirements.txt
+
+## Model Performance
+
+The spam classifier achieves high accuracy on the test data, and the evaluation metrics (precision, recall, F1-score) indicate its effectiveness in identifying spam messages.
+
+## Demo
+
+You can try out the SMS spam classifier by running the streamlit run app.py script. Simply input a sample message, and the script will output whether the message is spam or ham.
+
+## Contributions
+
+Feel free to contribute by opening issues or submitting pull requests! Contributions that enhance the accuracy, performance, or features of the classifier are welcome.
+
+
